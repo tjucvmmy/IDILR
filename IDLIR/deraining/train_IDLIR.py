@@ -42,7 +42,7 @@ def main():
 
    
     # Build model
-    model = PReNet(recurrent_iter=opt.recurrent_iter, use_GPU=opt.use_gpu)
+    model = IDLIR(recurrent_iter=opt.recurrent_iter, use_GPU=opt.use_gpu)
     print_network(model)
 
     # loss function
