@@ -21,6 +21,7 @@ class MSRB(nn.Module):
         super(MSRB, self).__init__()
         
         self.conv_1=nn.Sequential(
+             
                                   nn.AvgPool2d(kernel_size=1 ,stride=1),
                                   nn.Conv2d(mid_channel, mid_channel, 3, 1,1),
                                   nn.PReLU(),
